@@ -18,7 +18,7 @@
 - Al activar: muestra notificación `"ACTIVADO"`
 - Al desactivar: notificación `"DESACTIVADO"`
 
-## 👤 Autor
+## 🧑‍💻 Autor
 
 Creado por **iAlexMX**  
 💬 Para créditos, menciones o mejoras: no olvides dar ⭐ al repositorio si te fue útil.
