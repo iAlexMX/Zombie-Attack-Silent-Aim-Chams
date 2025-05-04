@@ -10,8 +10,6 @@
 - Visualización tipo **Chams/Highlight** con cambio de color según visibilidad:
   - 🟢 **Verde**: enemigo visible.
   - 🔴 **Rojo**: enemigo detrás de una pared u obstáculo.
-- Funciona dinámicamente en todos los enemigos del entorno.
-- Se actualiza cada 0.3 segundos para reflejar el estado actual.
 
 ### 🎛️ Controles
 - Presiona `V` para **activar/desactivar** Aimbot + ESP.
