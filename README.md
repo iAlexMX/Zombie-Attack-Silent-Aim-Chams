@@ -20,6 +20,15 @@
 - Al activar: muestra notificación `"ACTIVADO"`
 - Al desactivar: notificación `"DESACTIVADO"`
 
+---
+
+## 🎮 Link del juego
+
+https://www.roblox.com/es/games/1240123653/Zombie-Attack
+
+
+---
+
 ## 🧑‍💻 Autor
 
 Creado por **iAlexMX**  
