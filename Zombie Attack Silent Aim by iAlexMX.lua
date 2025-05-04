@@ -171,3 +171,40 @@ task.spawn(function()
         task.wait(0.3)
     end
 end)
+
+local player = game:GetService("Players").LocalPlayer
+local uis = game:GetService("UserInputService")
+local powerupsActive = false
+
+
+local function collectPowerups()
+    local powerups = workspace:FindFirstChild("Powerups")
+    if powerups then
+        for _, powerup in ipairs(powerups:GetChildren()) do
+            if powerup:FindFirstChild("Part") then
+                firetouchinterest(player.Character.HumanoidRootPart, powerup.Part, 0)
+            end
+        end
+    end
+end
+
+
+uis.InputBegan:Connect(function(input, gameProcessed)
+    if not gameProcessed and input.KeyCode == Enum.KeyCode.Z then
+        powerupsActive = not powerupsActive
+        
+
+        game.StarterGui:SetCore("SendNotification", {
+            Title = "Auto Powerups",
+            Text = powerupsActive and "ACTIVADO" or "DESACTIVADO",
+            Duration = 0.3
+        })
+    end
+end)
+
+
+while wait(0.1) do
+    if powerupsActive and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+        collectPowerups()
+    end
+end
