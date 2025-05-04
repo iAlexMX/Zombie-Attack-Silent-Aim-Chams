@@ -2,7 +2,7 @@
 
 ## ✨ Características
 
-### 🔫 Aimbot Inteligente
+### 🔫 Aim Inteligente
 - Apunta automáticamente al **enemigo más cercano al cursor**.
 - Incluye **wallcheck**: ignora enemigos ocultos detrás de paredes u objetos sólidos.
 
@@ -17,8 +17,8 @@
 - Presiona `V` para **activar/desactivar** Aimbot + ESP.
 
 ### 🔔 Notificaciones
-- Al activar: muestra notificación `"Aimbot y Chams Activado"`
-- Al desactivar: notificación `"Aimbot y Chams Desactivado"`
+- Al activar: muestra notificación `"ACTIVADO"`
+- Al desactivar: notificación `"DESACTIVADO"`
 
 ## 👤 Autor
 
