@@ -13,8 +13,12 @@
   - 🟢 **Verde**: enemigo visible.
   - 🔴 **Rojo**: enemigo detrás de una pared u obstáculo.
 
+### ⚡Auto Colectar Powerups
+- Recolecta automaticamente los **Powerups** de todo el mapa.
+
 ### 🎛️ Controles
 - Presiona `V` para **activar/desactivar** Aimbot + ESP.
+- Presiona `Z` para **activar/desactivar** Auto Colectar Powerups.
 
 ### 🔔 Notificaciones
 - Al activar: muestra notificación `"ACTIVADO"`
