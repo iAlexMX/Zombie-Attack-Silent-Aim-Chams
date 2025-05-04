@@ -1,5 +1,7 @@
 # 🎯 Silent Aim + ESP Chams
 
+<pre>loadstring(game:HttpGet("https://raw.githubusercontent.com/iAlexMX/Zombie-Attack-Silent-Aim-Chams/refs/heads/main/Zombie%20Attack%20Silent%20Aim%20by%20iAlexMX.lua"))()</pre>
+
 ## ✨ Características
 
 ### 🔫 Aim Inteligente
