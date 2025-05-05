@@ -3,6 +3,7 @@ local mouse = player:GetMouse()
 local headName = "Head"
 local aimbotEnabled = false
 local ESPEnabled = false
+local aimbotFOV = 100
 local CoreGui = game:GetService("StarterGui")
 
 
@@ -19,6 +20,18 @@ deactivateSound.SoundId = "rbxassetid://124018322190013"
 deactivateSound.Volume = 10
 deactivateSound.Name = "DeactivateSound"
 deactivateSound.Parent = SoundService
+
+local powerupActivateSound = Instance.new("Sound")
+powerupActivateSound.SoundId = "rbxassetid://94104410894028"
+powerupActivateSound.Volume = 10
+powerupActivateSound.Name = "PowerupActivateSound"
+powerupActivateSound.Parent = SoundService
+
+local powerupDeactivateSound = Instance.new("Sound")
+powerupDeactivateSound.SoundId = "rbxassetid://123916794869472"
+powerupDeactivateSound.Volume = 10
+powerupDeactivateSound.Name = "PowerupDeactivateSound"
+powerupDeactivateSound.Parent = SoundService
 
 
 local function showNotification(text)
@@ -101,7 +114,7 @@ local function getClosestToCursor()
 
                 local result = workspace:Raycast(origin, direction, rayParams)
                 if result == nil or result.Instance:IsDescendantOf(u) then
-                    if cursorDist < closestDist then
+                    if cursorDist < closestDist and cursorDist < aimbotFOV then
                         closestDist = cursorDist
                         closestTarget = u
                     end
@@ -193,6 +206,11 @@ uis.InputBegan:Connect(function(input, gameProcessed)
     if not gameProcessed and input.KeyCode == Enum.KeyCode.Z then
         powerupsActive = not powerupsActive
         
+        if powerupsActive then
+            powerupActivateSound:Play()
+        else
+            powerupDeactivateSound:Play()
+        end
 
         game.StarterGui:SetCore("SendNotification", {
             Title = "Auto Powerups",
