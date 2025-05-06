@@ -35,5 +35,5 @@ https://www.roblox.com/es/games/1240123653/Zombie-Attack
 
 ## 🧑‍💻 Autor
 
-Creado por **iAlexMX**  
+Creado por **AlexScriptX**  
 💬 Para créditos, menciones o mejoras: no olvides dar ⭐ al repositorio si te fue útil.
