@@ -158,7 +158,7 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
             task.delay(1.7, function()
                 CoreGui:SetCore("SendNotification", {
                     Title = "Script",
-                    Text = "by iAlexMX",
+                    Text = "by AlexScriptX",
                     Duration = 3
                 })
             end)
