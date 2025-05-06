@@ -3,7 +3,7 @@ local mouse = player:GetMouse()
 local headName = "Head"
 local aimbotEnabled = false
 local ESPEnabled = false
-local aimbotFOV = 120
+local aimbotFOV = 110
 local CoreGui = game:GetService("StarterGui")
 
 
