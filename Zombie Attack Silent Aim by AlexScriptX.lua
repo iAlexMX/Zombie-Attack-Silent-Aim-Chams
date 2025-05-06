@@ -49,9 +49,9 @@ local function createChams(target)
     local highlight = Instance.new("Highlight")
     highlight.Name = "Chams_ESP"
     highlight.Adornee = target
-    highlight.FillTransparency = 0.5
+    highlight.FillTransparency = 0.6
     highlight.OutlineColor = Color3.fromRGB(255, 255, 255)
-    highlight.OutlineTransparency = 0
+    highlight.OutlineTransparency = 1
     highlight.Parent = target
 end
 
